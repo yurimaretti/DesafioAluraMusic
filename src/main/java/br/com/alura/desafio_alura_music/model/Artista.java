@@ -28,8 +28,7 @@ public class Artista {
     public Artista() {
     }
 
-    public Artista(Long id, String nome, TipoArtista tipo) {
-        this.id = id;
+    public Artista(String nome, TipoArtista tipo) {
         this.nome = nome;
         this.tipo = tipo;
     }
@@ -71,9 +70,8 @@ public class Artista {
 
     @Override
     public String toString() {
-        return "[ Artista: " +
-                "Nome = " + nome +
+        return "Artista = " + nome +
                 ", Tipo = " + tipo +
-                " ]";
+                ", Músicas = " + musicas;
     }
 }

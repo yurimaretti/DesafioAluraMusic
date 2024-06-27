@@ -21,8 +21,7 @@ public class Musica {
     public Musica() {
     }
 
-    public Musica(Long id, String titulo, Artista artista) {
-        this.id = id;
+    public Musica(String titulo, Artista artista) {
         this.titulo = titulo;
         this.artista = artista;
     }
@@ -55,9 +54,7 @@ public class Musica {
 
     @Override
     public String toString() {
-        return "[ Música: " +
-                "Título = " + titulo +
-                ", Artista = " + artista +
-                " ]";
+        return "Título = " + titulo +
+                ", Artista = " + artista.getNome();
     }
 }
