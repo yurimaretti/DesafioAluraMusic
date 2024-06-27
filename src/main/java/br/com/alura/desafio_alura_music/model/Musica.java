@@ -32,24 +32,12 @@ public class Musica {
         return id;
     }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
-
     public String getTitulo() {
         return titulo;
     }
 
-    public void setTitulo(String titulo) {
-        this.titulo = titulo;
-    }
-
     public Artista getArtista() {
         return artista;
-    }
-
-    public void setArtista(Artista artista) {
-        this.artista = artista;
     }
 
     @Override
